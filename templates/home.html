@@ -1,0 +1,30 @@
+
+{% extends 'base.html' %}
+{% block title %} Home - {{ block.super }}{% endblock %}
+
+{% block body %}
+	
+    <div class="container-fluid">
+       <!-- <div class="row" style="margin-botton:30px;">
+
+            &lt;!&ndash;<div class="col-md-3 col-sm-6 " style="background-color: purple; height:100px;">ürün1</div>
+            <div class="col-md-3 col-sm-6" style="background-color: blue; height:100px;">ürün2</div>
+            <div class="col-md-3 col-sm-6" style="background-color: orange; height:100px;">ürün3</div>
+            <div class="col-md-3 col-sm-6" style="background-color: pink; height:100px;">ürün4</div>&ndash;&gt;
+
+        </div>-->
+        <div class="row">
+            <div class="col-md-4" style="background-color:red; height:100px;"></div>
+            <div class="col-md-8" style="background-color:black; height:100px;">
+                <div class="row">
+                <div class="col-md-2" style="background-color:blue; height: 100px;"></div>
+                <div class="col-md-6" style="background-color:purple; height: 100px;"></div>
+                <div class="col-md-4" style="background-color:orange; height: 100px;"></div>
+                </div>
+            </div>
+        </div>
+        Welcome, {{ request.user.get_full_name }}
+    </div>
+
+{% endblock %}
+
